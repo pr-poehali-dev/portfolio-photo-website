@@ -85,7 +85,7 @@ const Index = () => {
       ctx.textAlign = 'center';
       ctx.textBaseline = 'middle';
       
-      const watermarkText = '© PHOTO STUDIO';
+      const watermarkText = '© KK';
       ctx.fillText(watermarkText, canvas.width / 2, canvas.height / 2);
       
       const watermarkedUrl = canvas.toDataURL('image/jpeg', 0.95);
@@ -123,7 +123,7 @@ const Index = () => {
       <nav className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-purple-100">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
           <div className="text-2xl font-bold bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">
-            PHOTO STUDIO
+            KK
           </div>
           
           <div className="hidden md:flex items-center gap-6">
@@ -478,7 +478,7 @@ const Index = () => {
       <footer className="py-12 px-4 bg-gradient-to-r from-primary via-secondary to-accent text-white">
         <div className="container mx-auto">
           <div className="flex flex-col md:flex-row items-center justify-between gap-6">
-            <div className="text-2xl font-bold">PHOTO STUDIO</div>
+            <div className="text-2xl font-bold">KK</div>
             
             <div className="flex gap-6">
               {['Instagram', 'Facebook', 'Twitter', 'Youtube'].map((social) => (
@@ -492,7 +492,7 @@ const Index = () => {
             </div>
 
             <div className="text-sm opacity-90">
-              © 2024 Photo Studio. Все права защищены.
+              © 2024 KK. Все права защищены.
             </div>
           </div>
         </div>
