@@ -12,9 +12,11 @@ const Index = () => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
 
   const portfolioImages = [
-    'https://cdn.poehali.dev/projects/7679d6d0-24a9-4963-ab84-7a54ff25ba65/files/a30c8e83-fb33-48d3-a705-747406f617f5.jpg',
-    'https://cdn.poehali.dev/projects/7679d6d0-24a9-4963-ab84-7a54ff25ba65/files/34df73d5-f5c5-4841-98fd-db11f635e9db.jpg',
-    'https://cdn.poehali.dev/projects/7679d6d0-24a9-4963-ab84-7a54ff25ba65/files/de62ec34-996e-4973-999b-34495e401f41.jpg',
+    'https://cdn.poehali.dev/files/e6c50120-d8ff-4754-8d3d-c45523e3db11.jpg',
+    'https://cdn.poehali.dev/files/34e3d77e-edb2-491a-aa2c-dc56edb86334.jpg',
+    'https://cdn.poehali.dev/files/318e8021-e4e4-4b94-8a82-5126234f1cc3.jpg',
+    'https://cdn.poehali.dev/files/566c3afe-78e1-418f-b5a1-47dce58f6328.jpg',
+    'https://cdn.poehali.dev/files/eab488e3-bccb-4c6a-bdf6-e0f94f196389.jpg',
   ];
 
   const services = [
