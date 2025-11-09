@@ -19,48 +19,48 @@ const Index = () => {
 
   const services = [
     {
-      title: 'Портретная съёмка',
-      description: 'Профессиональные портреты для бизнеса и личных целей',
-      price: 'от 5 000 ₽',
-      icon: 'User'
-    },
-    {
-      title: 'Коммерческая съёмка',
-      description: 'Фотосъёмка товаров и услуг для вашего бизнеса',
+      title: 'Инфографика',
+      description: 'Визуализация данных и статистики для презентаций',
       price: 'от 8 000 ₽',
-      icon: 'Briefcase'
+      icon: 'BarChart3'
     },
     {
-      title: 'Мероприятия',
-      description: 'Репортажная съёмка событий и праздников',
+      title: 'Айдентика',
+      description: 'Разработка логотипов и фирменного стиля',
+      price: 'от 15 000 ₽',
+      icon: 'Palette'
+    },
+    {
+      title: 'Презентации',
+      description: 'Дизайн презентаций для бизнеса и выступлений',
       price: 'от 10 000 ₽',
-      icon: 'Camera'
+      icon: 'Presentation'
     },
     {
-      title: 'Креативная съёмка',
-      description: 'Художественные фотопроекты и концептуальные работы',
-      price: 'от 12 000 ₽',
-      icon: 'Sparkles'
+      title: 'Соц. сети',
+      description: 'Оформление постов и сторис для Instagram',
+      price: 'от 5 000 ₽',
+      icon: 'Image'
     }
   ];
 
   const testimonials = [
     {
-      name: 'Анна Соколова',
-      role: 'Владелица бутика',
-      text: 'Невероятная работа! Фотографии превзошли все ожидания. Профессионализм на высшем уровне.',
+      name: 'Максим Орлов',
+      role: 'CEO Tech Startup',
+      text: 'Инфографика от KK помогла нам выиграть инвестиционный питч. Данные ожили!',
       rating: 5
     },
     {
-      name: 'Дмитрий Волков',
-      role: 'Основатель стартапа',
-      text: 'Быстро, качественно, креативно. Именно то, что нужно для современного бизнеса.',
+      name: 'Ольга Зайцева',
+      role: 'Маркетолог',
+      text: 'Лучший дизайнер инфографики! Сложные данные превращает в понятные визуалы.',
       rating: 5
     },
     {
-      name: 'Елена Петрова',
-      role: 'Организатор свадеб',
-      text: 'Работаем вместе уже 3 года. Всегда безупречный результат и довольные клиенты.',
+      name: 'Игорь Новиков',
+      role: 'Бренд-менеджер',
+      text: 'Сотрудничаем уже 2 года. Всегда свежие идеи и быстрая реализация.',
       rating: 5
     }
   ];
@@ -160,19 +160,19 @@ const Index = () => {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="space-y-6 animate-fade-in">
               <Badge className="bg-primary/10 text-primary hover:bg-primary/20">
-                Профессиональная фотосъёмка
+                Графический дизайн инфографики
               </Badge>
               
               <h1 className="text-5xl md:text-7xl font-bold leading-tight">
-                Ваши моменты в
+                Данные в
                 <span className="bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">
-                  {' '}идеальных кадрах
+                  {' '}визуальные истории
                 </span>
               </h1>
               
               <p className="text-xl text-gray-600 leading-relaxed">
-                Создаю визуальные истории, которые останутся с вами навсегда. 
-                Современный подход к фотографии с защитой авторских прав.
+                Превращаю сложные данные в понятную и красивую инфографику. 
+                Помогаю брендам говорить визуально с защитой авторских прав.
               </p>
               
               <div className="flex flex-wrap gap-4">
@@ -181,12 +181,12 @@ const Index = () => {
                   className="bg-gradient-to-r from-primary to-secondary hover:opacity-90 text-lg px-8"
                   onClick={() => scrollToSection('portfolio')}
                 >
-                  Смотреть работы
+                  Портфолио
                   <Icon name="ArrowRight" size={20} className="ml-2" />
                 </Button>
                 <Button size="lg" variant="outline" className="text-lg px-8">
-                  <Icon name="Phone" size={20} className="mr-2" />
-                  Заказать съёмку
+                  <Icon name="Briefcase" size={20} className="mr-2" />
+                  Заказать дизайн
                 </Button>
               </div>
             </div>
@@ -195,7 +195,7 @@ const Index = () => {
               <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-secondary/20 rounded-3xl blur-3xl"></div>
               <img
                 src="https://cdn.poehali.dev/projects/7679d6d0-24a9-4963-ab84-7a54ff25ba65/files/de62ec34-996e-4973-999b-34495e401f41.jpg"
-                alt="Photography Studio"
+                alt="Graphic Design Studio"
                 className="relative rounded-3xl shadow-2xl w-full object-cover hover:scale-105 transition-transform duration-500"
               />
             </div>
@@ -210,10 +210,10 @@ const Index = () => {
               Портфолио
             </Badge>
             <h2 className="text-4xl md:text-5xl font-bold mb-4">
-              Мои работы с защитой
+              Проекты инфографики
             </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              Все фотографии защищены водяными знаками для демонстрации клиентам
+              Все работы защищены водяными знаками для демонстрации
             </p>
           </div>
 
@@ -281,20 +281,20 @@ const Index = () => {
               </Badge>
               
               <h2 className="text-4xl md:text-5xl font-bold">
-                Привет! Я фотограф с 8-летним опытом
+                Привет! Я графический дизайнер с 7-летним опытом
               </h2>
               
               <p className="text-lg text-gray-600 leading-relaxed">
-                Моя страсть — создавать визуальные истории, которые передают эмоции и атмосферу момента. 
-                Работаю с коммерческими и частными клиентами по всей России.
+                Моя страсть — превращать данные в визуальные истории, которые вовлекают и объясняют. 
+                Работаю с брендами, стартапами и агентствами по всему миру.
               </p>
 
               <div className="space-y-4">
                 {[
-                  { icon: 'Award', text: 'Победитель конкурса "Лучший фотограф года 2023"' },
-                  { icon: 'Users', text: 'Более 500 довольных клиентов' },
-                  { icon: 'Camera', text: 'Съёмка на профессиональное оборудование' },
-                  { icon: 'Zap', text: 'Быстрая обработка — от 3 дней' }
+                  { icon: 'Award', text: 'Лауреат конкурса "Best Infographic Design 2023"' },
+                  { icon: 'Users', text: 'Более 300 реализованных проектов' },
+                  { icon: 'Palette', text: 'Работа в Adobe Illustrator и Figma' },
+                  { icon: 'Zap', text: 'Быстрая разработка — от 2 дней' }
                 ].map((item, index) => (
                   <div key={index} className="flex items-center gap-3">
                     <div className="bg-gradient-to-r from-primary to-secondary p-2 rounded-lg">
@@ -311,7 +311,7 @@ const Index = () => {
                 <div key={i} className="relative group">
                   <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-2xl blur-xl group-hover:blur-2xl transition-all"></div>
                   <div className="relative bg-gradient-to-br from-purple-100 to-pink-100 rounded-2xl p-8 h-48 flex items-center justify-center hover:scale-105 transition-transform">
-                    <Icon name="Camera" size={48} className="text-primary/40" />
+                    <Icon name="PenTool" size={48} className="text-primary/40" />
                   </div>
                 </div>
               ))}
@@ -330,7 +330,7 @@ const Index = () => {
               Что я предлагаю
             </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              Полный спектр фотоуслуг для бизнеса и личных целей
+              Полный спектр услуг графического дизайна и инфографики
             </p>
           </div>
 
